@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: dep3
 spec:
-  replicas: 6
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,4 +19,4 @@ spec:
     spec:
       containers:
         - name: web
-          image: redis
+          image: ngnix
